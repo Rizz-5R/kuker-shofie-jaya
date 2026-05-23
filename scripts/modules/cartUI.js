@@ -48,5 +48,7 @@ export function renderCart() {
     setTimeout(() => {
         floatingCart.classList.remove("bump");
     }, 300);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
 
