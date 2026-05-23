@@ -4,11 +4,11 @@ export const PRODUCTS = [
         id: 1,
         name: "Brownies kemasan Mini (150gr)",
         variant: [
-            {name: "Cokelat", price: 18500},
-            {name: "Vanila", price: 18500},
-            {name: "Jahe", price: 18500}
+            {name: "Cokelat", price: 17000},
+            {name: "Vanila", price: 17000},
+            {name: "Jahe", price: 17000}
         ],
-        price: 18500,
+        price: 17000,
         image: "./asset/image/brownies-mini.jpeg",
         description: "Brownies mini dengan rasa cokelat yang lezat, cocok untuk camilan sehari-hari.",
     },
@@ -16,11 +16,11 @@ export const PRODUCTS = [
         id: 2,
         name: "Brownies kemasan Sedang (350gr)",
         variant: [
-            {name: "Cokelat", price: 22000},
-            {name: "Vanila", price: 22000},
-            {name: "Jahe", price: 22000}
+            {name: "Cokelat", price: 24000},
+            {name: "Vanila", price: 24000},
+            {name: "Jahe", price: 24000}
         ],
-        price: 22000,
+        price: 24000,
         image: "./asset/image/brownies-mini.jpeg",
         description: "Brownies mini dengan rasa cokelat yang lezat, cocok untuk camilan sehari-hari.",
     },

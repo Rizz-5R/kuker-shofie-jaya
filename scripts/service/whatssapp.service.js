@@ -1,15 +1,17 @@
 export function sendWhatsAppMessage(
     productName, variantName, quantity, price) {
-    const phoneNumber = "087758840229";
+    const phoneNumber = "6287758840229";
 
     const total = price * quantity;
 
-    const message = `Assalamualaikum, halo min,` +
-     `saya ingin memesan kue :` + 
-     ` ${productName} ` +
-     `Varian : ${variantName} ` +
-     `Jumlah : ${quantity} pcs / kemasan ` +
-     `Total : Rp${total.toLocaleString("id-ID")}`;
+    const message = `Assalamualaikum, halo min,
+     (nama) Saya: 
+     Alamat: 
+
+     Ingin memesan kue : ${productName} 
+     Varian : ${variantName} 
+     Jumlah : ${quantity} pcs  
+     Total : Rp${total.toLocaleString("id-ID")}`;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -20,11 +22,14 @@ export function sendWhatsAppMessage(
 
 export function sendWhatsAppCart(cart) {
 
-  const phoneNumber = "087758840229";
+  const phoneNumber = "6287758840229";
 
   let message =
-    `Assalamualaikum halo min. ` +
-    `Saya ingin memesan: `;
+    `Assalamualaikum halo min. 
+    (Nama) Saya: 
+    Alamat:  
+
+    Ingin memesan kue: `;
 
   let grandTotal = 0;
 
@@ -34,9 +39,9 @@ export function sendWhatsAppCart(cart) {
     grandTotal += itemTotal;
 
     message +=
-      ` ${item.product.name} ` +
-      `Varian: ${item.variant} ` +
-      `Jumlah: ${item.quantity} pcs / kemasan. ` 
+      `${item.product.name} 
+      Varian: ${item.variant} 
+      Jumlah: ${item.quantity} pcs. ` 
   });
 
   message +=

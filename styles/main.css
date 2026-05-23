@@ -6,6 +6,9 @@
 
 @import url("./layout/product.css");
 @import url("./layout/cart.css");
+@import url("./layout/why-us.css");
+@import url("./layout/testimonial.css");
+
 
 * {
     margin: 0;
