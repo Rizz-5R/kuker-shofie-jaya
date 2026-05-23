@@ -1,7 +1,7 @@
 .cart-section {
     position: fixed;
     top: -50px;
-    right: -420px;
+    right: -400px;
     width: 400px;
     height: 100%;
     background: white;
@@ -51,14 +51,15 @@
 .floating-cart {
     position: fixed;
     bottom: 24px;
-    right: 24px;
+    right: 54px;
     width: 60px;
     height: 60px;
     /* border-radius: 50%; */
     border: none;
     background: transparent;
-    color: #d4a017;
+    color: black;
     font-size: 27px;
+    font-weight: 700;
     cursor: pointer;
     /* z-index: 1000; */
     transition: 0.3s ease;

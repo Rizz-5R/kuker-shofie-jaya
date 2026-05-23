@@ -5,10 +5,12 @@ import "./components/navbar.js"
 import "./components/cartDrawer.js"
 import { renderWhyUs } from "./components/whyUs.js";
 import { renderTestimonials } from "./components/testimonial.js";
+import { renderFooter } from "./components/footer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
     renderCart();
     renderWhyUs();
     renderTestimonials();
+    renderFooter();
 });

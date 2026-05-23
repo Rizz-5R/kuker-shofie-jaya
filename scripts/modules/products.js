@@ -29,7 +29,7 @@ export function renderProducts() {
 
             <div class="price-display"></div>
 
-            <button class="order-btn">Pesan Sekarang</button>
+            <button class="order-btn">Pesan Produk Ini</button>
 
             <button class="cart-btn">Tambah ke Keranjang</button>
             `;
