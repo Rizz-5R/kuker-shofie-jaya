@@ -75,12 +75,24 @@ export function renderProducts() {
             const selectedOption = select.options[select.selectedIndex];
             const price = Number(selectedOption.dataset.price);
 
-            cart.push({
-                product: product,
-                variant: selectedVariant,
-                quantity,
-                price
+            const existingItem = cart.find((item) => {
+            return (
+                item.product.name === product.name &&
+                item.variant === selectedVariant
+            );
+
             });
+
+            if(existingItem) {
+                existingItem.quantity += quantity;
+            } else {
+                cart.push({
+                    product,
+                    variant: selectedVariant,
+                    quantity,
+                    price
+                });
+            }
 
             renderCart();
             
