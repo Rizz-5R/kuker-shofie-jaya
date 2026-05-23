@@ -5,6 +5,7 @@
 @import url("./layout/hero.css");
 
 @import url("./layout/product.css");
+@import url("./layout/cart.css");
 
 * {
     margin: 0;

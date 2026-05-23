@@ -75,7 +75,10 @@
 
     </section>
 
-    <section class="cart-section">
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-section" id="cartSection">
+
         <div class="cart-header">
             <h2>Keranjang Belanja</h2>
             <span class="cart-badge" id="cartCount"></span>
@@ -91,12 +94,17 @@
 
             <button id="checkoutButton">Checkout Via WhatsApp</button>
         </div>
-    </section>
+    </aside>
 
     <section id="why-us"></section>
     <section id="testimonials"></section>
 
 </div>   
+
+    <button class="floating-cart" id="floatingCart">
+    🛒
+    <span id="floatingCartCount">0</span>
+    </button>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>

@@ -1,0 +1,46 @@
+.cart-section {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    z-index: 999;
+    transition: .3s ease;
+    padding: 24px;
+    overflow-y: auto;
+    box-shadow: -10px 0 30px rgba(0,0,0,.08);
+}
+
+.cart-section.active {
+    right: 0;
+}
+
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-cart {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #d4a017;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}

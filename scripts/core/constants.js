@@ -40,12 +40,22 @@ export const PRODUCTS = [
         id: 4,
         name: "Roti Bolu Lipat (/pcs)",
         variant: [
-            {name: "Cokelat", price: 1500},
-            {name: "Vanila", price: 1500},
-            {name: "Jahe", price: 1500}
+            {name: "Nanas", price: 1500},
+            {name: "Strawbery", price: 1500},
+            {name: "Melon", price: 1500}
         ],
         price: 1500,
         image: "./asset/image/menu-roti.png",
+        description: "Brownies mini dengan rasa cokelat yang lezat, cocok untuk camilan sehari-hari.",
+    },
+    {
+        id: 5,
+        name: "Roti Lumpur Surgawi (/pcs)",
+        variant: [ 
+            {name: "Vanila", price: 2000}
+        ],
+        price: 1500,
+        image: "./asset/image/lumpur.jpeg",
         description: "Brownies mini dengan rasa cokelat yang lezat, cocok untuk camilan sehari-hari.",
     },
 ]
