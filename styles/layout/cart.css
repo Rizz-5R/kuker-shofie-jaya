@@ -1,9 +1,9 @@
 .cart-section {
     position: fixed;
-    top: 0;
+    top: -50px;
     right: -420px;
     width: 400px;
-    height: 100vh;
+    height: 100%;
     background: white;
     z-index: 999;
     transition: .3s ease;
@@ -16,7 +16,25 @@
     right: 0;
 }
 
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-cart {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: .2s ease;
+}
+
+
 .cart-overlay {
+    border: 1px solid;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,.4);
@@ -42,5 +60,24 @@
     color: white;
     font-size: 22px;
     cursor: pointer;
-    z-index: 1000;
+    /* z-index: 1000; */
+    transition: 0.3s ease;
+}
+.floating-cart.bump {
+    animation: bump 0.3s ease;
+}
+
+@keyframes bump {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

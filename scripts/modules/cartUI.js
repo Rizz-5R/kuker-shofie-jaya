@@ -1,5 +1,9 @@
 import { cart } from "../core/cart.js";
 
+const floatingCartCount = document.getElementById("floatingCartCount");
+const cartCount = document.getElementById("cartCount");
+const floatingCart = document.getElementById("floatingCart");
+
 export function renderCart() {
 
     const cartItems = document.getElementById("cartItems");
@@ -37,5 +41,12 @@ export function renderCart() {
         cartItems.appendChild(div);
     });
     grandTotal.innerText = `Total Belanja : Rp${total.toLocaleString("id-ID")}`;
+    floatingCartCount.textContent = cart.length;
+    cartCount.textContent = `${cart.length} Item`;
+    floatingCart.classList.add("bump");
+
+    setTimeout(() => {
+        floatingCart.classList.remove("bump");
+    }, 300);
 }
 
