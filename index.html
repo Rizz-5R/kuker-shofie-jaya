@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Kuker (Shofie Jaya)</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/layout/navbar.css">
+    <link rel="stylesheet" href="./styles/layout/hero.css">
+</head>
+<body>
+<div class="app-container">
+
+    <header class="navbar">
+        
+        <div class="logo">
+            <img src="./asset/logo/logo.jpeg" alt="">
+            <span>King Kuker (Shofie Jaya)</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Keunggulan</a>
+            <a href="#">Testimoni</a>
+        </nav>
+
+        <button class="nav-cta">Pesan Sekarang</button>
+    </header>
+
+    <section class="hero-section">
+
+        <div class="contain hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    Fresh dari Oven di Setiap Produksinya
+                </div>
+                <h1>Rajanya <span>Cookies</span> Rumahan</h1>
+                <p>Nikmati sensasi perpaduan varian rasa dengan kacangnya yang renyah, lembut dan cruncy</p>
+
+                <div class="hero-button">
+                    <button class="primary-btn">Pesan Sekarang</button>
+                    <button class="secondary-btn">Lihat Menu</button>
+                </div>
+
+                <div class="hero-customers">
+                    <div class="customer-images">
+                        <img src="./asset/image/menu-brownies.png" alt="">
+                        <img src="./asset/image/menu-brownies.png" alt="">
+                        <img src="./asset/image/menu-brownies.png" alt="">
+                        <img src="./asset/image/menu-brownies.png" alt="">
+                        
+                        <span>Dipercaya 100+ Pelanggan</span>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <img src="./asset/image/bg.jpeg" alt="Cookies">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="product" id="product">
+
+        <div class="section-title">
+            <h2>Prduk Unggulan</h2>
+            <p>Fresh baked premium homemade</p>
+        </div>
+
+        <div class="product-container" id="productsContainer"></div>
+
+    </section>
+
+    <section class="cart-section">
+        <div class="cart-header">
+            <h2>Keranjang Belanja</h2>
+            <span class="cart-badge" id="cartCount"></span>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total-box">
+                <span>Total Belanja</span>
+                <h3 id="grandTotal">Total: </h3>
+            </div>
+
+            <button id="checkoutButton">Checkout Via WhatsApp</button>
+        </div>
+    </section>
+
+    <section id="why-us"></section>
+    <section id="testimonials"></section>
+
+</div>   
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
