@@ -1,5 +1,10 @@
 const ctaButton = document.querySelector(".nav-cta");
 
-ctaButton.addEventListener("click", () => {
-    document.getElementById("product").scrollIntoView({behavior: "smooth"});
-});
+if (ctaButton) {
+    ctaButton.addEventListener("click", () => {
+        const productSection = document.getElementById("product");
+        if (productSection) {
+            productSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+}
