@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kingkuker.com/sitemap.xml
+Sitemap: https://rizz-5r.github.io/kuker-shofie-jaya/sitemap.xml
