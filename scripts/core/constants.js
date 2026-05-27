@@ -2,7 +2,7 @@
 export const PRODUCTS = [
     {
         id: 1,
-        name: "Brownies kemasan Mini (150gr)",
+        name: "Brownies kemasan Mini (170gr)",
         variant: [
             {name: "Cokelat", price: 17000},
             {name: "Vanila", price: 17000},
